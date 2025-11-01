@@ -31,7 +31,7 @@ class _SubjectSelectorState extends State<SubjectSelector> {
   Future<void> _loadSubjects() async {
     try {
       final response = await http.get(
-        Uri.parse('http://192.168.29.54:5000/api/subjects'),
+        Uri.parse('https://facemate-backend.onrender.com/api/subjects'),
       );
 
       if (response.statusCode == 200) {

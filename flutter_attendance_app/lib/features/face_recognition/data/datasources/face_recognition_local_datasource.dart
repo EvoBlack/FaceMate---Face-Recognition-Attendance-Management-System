@@ -30,7 +30,7 @@ class FaceRecognitionLocalDataSourceImpl implements FaceRecognitionLocalDataSour
       developer.log('Image size: ${imageBytes.length} bytes', name: 'FaceRecognition');
       
       final response = await http.post(
-        Uri.parse('http://localhost:5000/api/face-recognition/recognize'),
+        Uri.parse('https://facemate-backend.onrender.com/api/face-recognition/recognize'),
         headers: {'Content-Type': 'application/octet-stream'},
         body: imageBytes,
       );
