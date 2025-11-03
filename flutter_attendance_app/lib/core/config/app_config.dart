@@ -2,15 +2,15 @@ class AppConfig {
   static const String appName = 'FaceMate';
   static const String appVersion = '1.0.0';
   
-  // API Configuration - Using deployed backend on Render
-  static const String baseUrl = 'https://facemate-backend.onrender.com/api';
+  // API Configuration - Using deployed backend on HuggingFace
+  static const String baseUrl = 'https://evoblackk-facemate-backend.hf.space/api';
   
   // Alternative URLs to try (in order of preference)
   static const List<String> fallbackUrls = [
-    'https://facemate-backend.onrender.com/api',  // Production backend (primary)
-    'http://localhost:5000/api',                   // Local development fallback
-    'http://127.0.0.1:5000/api',                   // Localhost alternative
-    'http://10.0.2.2:5000/api',                    // Android emulator
+    'https://evoblackk-facemate-backend.hf.space/api',  // Production backend (HuggingFace)
+    'http://localhost:5000/api',                         // Local development fallback
+    'http://127.0.0.1:5000/api',                         // Localhost alternative
+    'http://10.0.2.2:5000/api',                          // Android emulator
   ];
   
   static const Duration connectTimeout = Duration(seconds: 10);

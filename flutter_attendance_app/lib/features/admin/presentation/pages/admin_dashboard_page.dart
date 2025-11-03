@@ -5,6 +5,7 @@ import '../../../home/presentation/widgets/home_menu_card.dart';
 import '../../../student_profile/presentation/pages/student_search_page.dart';
 import 'teacher_management_page.dart';
 import 'student_management_page.dart';
+import 'password_management_page.dart';
 
 class AdminDashboardPage extends StatelessWidget {
   const AdminDashboardPage({super.key});
@@ -76,6 +77,20 @@ class AdminDashboardPage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => const StudentSearchPage(),
+                      ),
+                    );
+                  },
+                ),
+                HomeMenuCard(
+                  title: 'Password Management',
+                  subtitle: 'Reset Passwords',
+                  icon: Icons.lock_reset,
+                  color: Colors.orange,
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const PasswordManagementPage(),
                       ),
                     );
                   },
